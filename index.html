@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Questao 06</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <canvas id="grafico01" width="300" height="300"> </canvas>
+    <script>
+      const ctx = document.getElementById('grafico01')
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['blouses', 'sale', 'skirts', 'trousers'],
+          datasets: [
+            {
+              label: 'Modelos Distintos em Cada Categoria de Roupas',
+              data: [59, 82, 34, 43],
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      })
+    </script>
+  </body>
+</html>

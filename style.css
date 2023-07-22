@@ -1,0 +1,15 @@
+body{
+  background: whitesmoke;
+  padding:15px;
+}
+canvas{
+  border:1px solid gray;
+  background: white;
+  width: 200px;
+  height: 200px;
+}
+
+.container{
+  margin:auto;
+  box-shadow: 50px;
+}
